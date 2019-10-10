@@ -27,10 +27,10 @@ start_timer = False #l'etat True autorise le lancement du timer
 timer_reinit = False #lorsque = True, reinitialise le timer
 
 
-#GPIO.setmode(GPIO.BCM) #pins GPIO initialises en mode BCM
+GPIO.setmode(GPIO.BCM) #pins GPIO initialises en mode BCM
 
-#GPIO.setup(num_port_rec,GPIO.IN)
-#GPIO.setup(num_port_led, GPIO.OUT, initial=GPIO.LOW)
+GPIO.setup(num_port_rec,GPIO.IN)
+GPIO.setup(num_port_led, GPIO.OUT, initial=GPIO.LOW)
 
 
 def checkFilePath(testString, extension, currentCount): #fonction en charge de la numerotation les enregistrements audio
